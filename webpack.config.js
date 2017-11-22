@@ -20,7 +20,7 @@ module.exports = {
             ]
         }]
     },
-    devtool: 'cheap-module-eval-source-map',
+    devtool: 'nosources-source-map',
     'devServer': {
         contentBase: path.join(__dirname, 'public')
     }
