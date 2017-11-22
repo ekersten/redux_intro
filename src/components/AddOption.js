@@ -11,6 +11,9 @@ export default class AddOption extends React.Component {
         
         if(error) {
             this.setState(() => ({error}));
+        } else {
+            e.target.reset();
+            e.target.elements.optionText.focus();
         }
     }
     render() {
