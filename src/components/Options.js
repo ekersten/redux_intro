@@ -7,7 +7,10 @@ const Options = (props) => (
         {props.options.length == 0 && <p>Enter an option</p>}
         {
             props.options.map((option, index) => (
-                <Option optionText={option} />
+                <Option
+                    optionText={option}
+                    handleDeleteOption={props.handleDeleteOption}
+                />
             ))
         }
     </div>

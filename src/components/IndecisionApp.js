@@ -57,12 +57,21 @@ export default class IndecisionApp extends React.Component {
         alert(option);
     }
 
+    handleDeleteOption = (optionToRemove) => {
+        this.setState((prevState) => ({
+            options: prevState.options.filter((option) => {
+                return option !== optionToRemove;
+            })
+        }));
+    }
     
 
     render() {
+        const subtitle = 'Put your life in the hands of a computer.'
         return (
+            
             <div>
-                <Header title="Indecision App" subtitle="Put your life in the hands of a computer."/>
+                <Header subtitle={subtitle}/>
                 <Action
                     hasOptions={!!this.state.options.length}
                     handlePickOption={this.handlePickOption}
@@ -70,6 +79,7 @@ export default class IndecisionApp extends React.Component {
                 <Options
                     options={this.state.options}
                     handleDeleteOptions={this.handleDeleteOptions}
+                    handleDeleteOption={this.handleDeleteOption}
                 />
                 <AddOption handleAddOption={this.handleAddOption}/>
             </div>
