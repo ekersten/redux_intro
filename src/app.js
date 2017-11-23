@@ -1,6 +1,1 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import 'normalize.css/normalize.css';
-import './styles/styles.scss';
-
-ReactDOM.render(<p>Start Here</p>, document.getElementById('app'));
+console.log('101');
