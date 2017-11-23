@@ -1,11 +1,10 @@
 {
-  "name": "indecision_app",
+  "name": "react_sample_app",
   "version": "1.0.0",
   "main": "src/app.js",
   "author": "Eric Kersten",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build": "webpack",
     "build-prod": "webpack -p",
     "dev-server": "webpack-dev-server"
